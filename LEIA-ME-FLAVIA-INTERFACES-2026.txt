@@ -1,0 +1,19 @@
+AMAZÔNIA EM FLUXO — ATUALIZAÇÃO FLÁVIA E INTERFACES APROVADAS
+
+EXECUÇÃO
+1. Extraia completamente o ZIP em uma pasta nova.
+2. Abra index.html no Microsoft Edge ou Google Chrome. Mantenha as pastas ui e assets3d juntas ao HTML.
+3. Se for publicar na web, envie toda a pasta e não só o index.html. Uma nova versão de cache foi incluída para reduzir arquivos antigos.
+
+ALTERAÇÕES DESTA REVISÃO
+• Campus Guamá — UFPA (capítulo 02): Flávia Gabrielli substitui o Professor Alemão como orientadora principal da apresentação do capítulo, com seu nome, retrato e texto próprio. A versão 3D da Flávia é utilizada na posição do orientador principal. Alemão permanece como orientador de apoio da segunda investigação, sem ocupar o lugar de narrador principal; as três missões originais são preservadas.
+• Escolha sua turma: composição visual aprovada, sem casa ou textos extras. Imagem original sem redesenhar os cinco personagens; chuva/água não deforma retratos, botões ou textos. Somente o rio e duas aves recebem movimento discreto, recortado no espaço.
+• Interface da partida: Clima, Física, Missão e Caderno usam a arte translúcida aprovada, com os quatro botões alinhados e eventos originais preservados. Os demais painéis ficam mais leves e transparentes, com indicadores dos orientadores preservados.
+• Investigação Sonora: estilo em madeira, dourado e roxo aplicado à janela funcional, mantendo frequência, gráfico, alternativas e resultado interativos.
+• Recursos 3D permanecem separados do HTML e são carregados sob demanda, conforme revisão anterior. Os marcadores de Flávia, Samuca e Gaby preservam a lógica de estabilidade.
+• Atualização do cache do aplicativo para não misturar artes antigas com a nova versão.
+
+VERIFICAÇÃO E LIMITAÇÕES
+Foi realizada validação de sintaxe JavaScript dos scripts modificados, verificação de presença dos arquivos, integridade do ZIP e inspeção estrutural dos 10 capítulos do pacote existente. O ambiente de navegador automatizado bloqueou a abertura do endereço de teste (ERR_BLOCKED_BY_ADMINISTRATOR). Por isso, não foram validados com WebGL completo todos os movimentos, interações e o FPS em computadores ou celulares reais. Não existe garantia de zero bugs nem de fidelidade perfeita de cada frame de cada interface.
+
+Créditos e licenças originais permanecem no pacote.

@@ -1,0 +1,26 @@
+AMAZÔNIA EM FLUXO — REVISÃO DE 22/11/2026
+
+Base: Amazonia-em-Fluxo-FLAVIA-VIDEOS-4K-SEM-IMAGENS-ANTIGAS-20261122.zip.
+
+ALTERAÇÕES
+1. A tela "Como jogar" do menu principal agora exibe o MP4 1000394326.mp4 fornecido pelo criador (arquivo derivado em H.264 720p CRF 16, AAC, 30 fps, 8,638 s; e versão ampliada 1440p). O vídeo ocupa a tela inteira, sem molduras, imagem de espera antiga ou efeitos de nitidez artificiais. Os botões clicáveis do vídeo são Modo Aventura, Modo Aula, Voltar e Lobby. A imagem do vídeo diz "Como você quer jogar?", pois esse texto está no vídeo original e não foi alterado.
+2. O início do capítulo Marco/Passagem José Leal Martins usa a geometria do próprio restaurante para posicionar o personagem na pista de x~13,4, alinhado com a fachada e olhando em sua direção. Se a posição estiver ocupada, tenta pequenos deslocamentos locais seguros.
+3. Removida a seção paralela "História dos capítulos" da seleção e desligado o filme histórico automático antes de entrar nos cenários. Foram preservados os objetivos didáticos de Física e suas ações.
+4. Desativados o aceno e a animação da mão ao clicar com o botão esquerdo; a interação de arrastar para girar a câmera continua.
+5. Os vídeos de menu em 4K passam a ser escolhidos só em monitores realmente grandes; celulares com densidade alta não tentam reproduzir 4K por engano. Resoluções maiores continuam disponíveis nos arquivos originais.
+6. Atualizado nome de cache do service worker e retirado o quadro antigo de modo da lista de precache para que as atualizações substituam arquivos antigos. Versões anteriores não foram alteradas.
+
+VALIDAÇÃO REALIZADA EM CHROMIUM DE TESTE
+- Tela Como jogar abriu e apresentou vídeo 1280x720, sem erros JavaScript. Botão Voltar fechou a janela.
+- Fluxo de cliques Como jogar → Aventura → Turma → Personagens executado sem exceções.
+- Dez capítulos inicializados sem exceção JavaScript, cada um com 3 tarefas.
+- Marco: posição inicial reportada x=13,4, z=-36,18; posição sem colisão; a posição z é a do restaurante modelado (-36,18).
+- Clique esquerdo disparado durante o jogo não modificou a variável handSwingAt.
+- Versões do MP4 do tutorial decodificadas integralmente com ffmpeg, sem erros.
+- Não foi detectado arquivo referenciado ausente nesses percursos simulados.
+
+LIMITAÇÕES DA VALIDAÇÃO
+O Chromium de teste operou sem renderização WebGL utilizável. Não foi possível verificar visualmente a câmera, o movimento 3D ou medir FPS em GPU real, nem completar todas as 30 tarefas jogando. Não há promessa de ausência absoluta de lag ou bugs. Recomenda-se validação final em computador com aceleração gráfica antes do lançamento.
+
+EXECUÇÃO
+Extraia o ZIP preservando a pasta Amazonia-em-Fluxo. Sirva a pasta por HTTP/HTTPS para recursos e service worker. Inicie pelo index.html. Chrome/Edge atual com aceleração gráfica habilitada.

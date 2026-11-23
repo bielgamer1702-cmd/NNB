@@ -1,0 +1,34 @@
+AMAZÔNIA EM FLUXO — REVISÃO RIGOROSA
+Data da revisão: novembro de 2026
+
+ALTERAÇÕES EFETIVAS NO PACOTE
+- Revisada a chamada das malhas de jogadores, orientadores e NPCs; quando um modelo ainda não está disponível, é exibida uma representação temporária em vez de omitir a entidade.
+- Flávia Gabrielli é a apresentadora do Campus Guamá na lógica principal e nos retratos da narração; o Professor Alemão permanece como apoio.
+- Atualizado o HUD com os quatro botões ilustrados aprovados, menores e translúcidos: Clima, Física, Missão e Caderno, mantendo os eventos de clique.
+- Criados indicadores separados de proximidade para professor principal e orientador complementar.
+- Seleção da turma: arte original intacta, com efeito local limitado ao rio e aves ao fundo.
+- Tela de missões e história expandida para a área disponível, com cartões clicáveis preservados.
+- Fotografias reais de locais: referências de URLs e créditos incluídos; as miniaturas externas aparecem quando disponíveis online e voltam à arte aprovada quando indisponíveis.
+- Experimento extra de Samuca com arte aprovada, frequência e gráfico calculados, alternativas e resposta verificável.
+- Banco do Campus Guamá ajustado para orientar a posição sentada da Flávia.
+- Removida a exclamação decorativa de elementos de seleção de personagem.
+- Removidos 8 arquivos de arte antigos sem referências no código; não foram removidos modelos compartilhados.
+- Cache atualizado para carregar arquivos de modelo por demanda, sem pré-baixar todos os arquivos 3D.
+- Eliminados os dois IDs HTML duplicados identificados na auditoria.
+
+VALIDAÇÕES REALMENTE EXECUTADAS
+- Auditoria de referências dos arquivos CSS e JavaScript no HTML: sem arquivos faltando.
+- Auditoria de sintaxe JS dos 67 scripts embutidos e dos scripts externos: sem erros de sintaxe.
+- Checagem estrutural das 37 entradas de modelos 3D: arquivos presentes.
+- Checagem de integridade das imagens aprovadas e dimensões via Pillow: passou.
+- Verificação da ordem dos dez capítulos e de seus pontos de clique: presença confirmada.
+- Verificação ZIP por CRC após empacotamento: conforme resultado do empacotador.
+
+LIMITAÇÕES DE TESTE
+- O navegador de testes do ambiente bloqueia a execução do aplicativo local antes de iniciar o WebGL. Não foi possível executar um playthrough completo, medir FPS ou provar ausência total de falhas de animação no equipamento real.
+- A fotografia real de cada capítulo depende de carregamento remoto de terceiros e pode não aparecer offline. As artes do jogo permanecem como alternativa quando isso ocorrer.
+- Imagens aprovadas são referências visuais e overlays; reproduzir todas as malhas 3D com fidelidade de imagem estática demanda validação manual no jogo.
+
+INSTALAÇÃO
+Extraia a pasta completa, mantendo assets3d/ e ui/ ao lado do index.html.
+Teste preferencialmente em uma pasta nova no computador, sem misturar arquivos de versões anteriores.

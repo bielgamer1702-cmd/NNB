@@ -1,0 +1,11 @@
+AMAZÔNIA EM FLUXO — CORREÇÃO DE TREMOR E NITIDEZ ARTIFICIAL
+
+Escopo: as três telas de vídeo 4K apenas. Os demais cenários e sistemas não foram modificados.
+
+Tela inicial e modo de jogo: correção leve de deslocamentos do enquadramento percebidos nas áreas de título, além da suavização discreta de realce excessivo de bordas. Os novos arquivos permanecem com 3840 × 2160 pixels e 30 fps.
+
+Escolha da turma: o vídeo recém-enviado é idêntico, bit por bit, à versão anterior. A inspeção de posições de referência indicou que essa tela já está estável, então preservamos o MP4 original sem recompressão.
+
+CSS: as três telas deixam de receber animação, transição, filtros ou embelezamento que possam acrescentar tremor/desfoque ao vídeo. O funcionamento dos botões foi preservado.
+
+OBSERVAÇÃO: a estabilização espacial não é capaz de eliminar pequenas deformações de elementos produzidas dentro dos quadros de uma animação original sem também reesculpir a animação. Não foi alterada a anatomia ou o movimento proposital dos personagens.

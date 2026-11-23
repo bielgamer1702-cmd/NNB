@@ -1,0 +1,30 @@
+AMAZÔNIA EM FLUXO — REVISÃO DE INTERFACES, VÍDEOS E JOGO (22/11/2026)
+
+Vídeos do usuário preservados em seus conteúdos originais:
+- ui/menus/escolha-missao.mp4 (1000393808.mp4)
+- ui/menus/escolha-turma.mp4 (1000393830.mp4)
+Versões H.264 reamostradas para 1440p e 2160p, além dos originais 720p.
+A ampliação não cria detalhes nativos novos; destina-se a permitir uma exibição mais nítida em diferentes monitores.
+Menus e vídeos em proporção 16:9 e ocupação total, sem molduras e sem imagem de borda fictícia.
+Ao selecionar turmas, o cartão inteiro recebe o clique; na seleção de missões, os cartões e botão jogar possuem áreas interativas próprias.
+
+HUD do gameplay: fundos com opacidade 0,30 (antes 0,60), sem alterar opacidade de textos e botões.
+Indicadores de NPC limitados por tamanho e sem nome sobre a seta quando o jogador chega perto.
+Banco da Flávia fixado na posição de início do cenário; correções preservam as animações de rig.
+Integração da imagem de clima do usuário via recorte sem cenário impresso, com fundo 90% transparente e ações sobre o motor do jogo.
+Imagens originais das outras interfaces preservadas, com versões de fundo mais transparente preparadas sem redigitar textos.
+Cena histórica dos professores reutilizada e disponibilizada para os dez capítulos.
+Créditos fornecidos exibidos ao completar a sequência de capítulos, usando o fluxo nativo de conclusão.
+
+Validação nesta entrega:
+- Sintaxe de 80 scripts internos do HTML e todos os scripts ui/*.js: sem erros de compilação detectados.
+- 35 referências dos modelos 3D presentes, sem arquivos de modelo faltantes.
+- Dez cenários definidos, arquivos dos vídeos de 720p/1440p/2160p presentes.
+- Arquivos dos dois vídeos originais iguais aos fornecidos (SHA-256).
+- Browser/WebGL no ambiente de preparação: navegação bloqueada por restrição de administrador;
+  uma tentativa alternativa também não concluiu. Não foi possível atestar teste visual
+  em todos os capítulos, compatibilidade por GPU, FPS real ou zero bugs.
+
+RECOMENDAÇÃO ANTES DO USO COM ESTUDANTES: testar em Chrome e Edge com aceleração gráfica,
+percorrer todas as dez fases, verificar o tempo de resposta de cada qualidade e cliques de menus
+em Chromebooks e computadores utilizados pela escola.

@@ -1,0 +1,6 @@
+AMAZÔNIA EM FLUXO — CENÁRIOS E INTERFACES
+
+PC: extraia TODO o ZIP numa nova pasta e abra index.html no Chrome ou Edge com aceleração gráfica ligada. Não execute diretamente de dentro do ZIP.
+Android: hospede todos os arquivos em HTTPS e abra na horizontal.
+Se já hospedou outra versão, substitua os arquivos e atualize a página após limpar o cache antigo, se necessário.
+Leia RELATORIO-REVISAO-2026.txt para conferir o que mudou e os testes e limitações.

@@ -1,0 +1,43 @@
+AMAZÔNIA EM FLUXO — 3 TELAS SUBSTITUÍDAS POR VÍDEOS 4K
+Data: 21/11/2026
+
+TELAS ALTERADAS (SOMENTE ESTAS):
+1. Tela inicial: ui/4k/tela-inicial-4k.mp4
+2. Como você quer jogar?: ui/4k/escolha-modo-4k.mp4
+3. Escolha sua turma: ui/4k/escolha-turma-4k.mp4
+
+Os vídeos MP4 foram copiados bit por bit, sem recompressão, mantendo 3840 x 2160 pixels a 30 fps.
+Arquivos WEBP adicionais são quadros de espera para o carregamento do vídeo; não substituem o vídeo 4K.
+A imagem estática anterior de escolha de turma foi removida e as imagens estáticas
+embutidas das telas inicial e de modo foram removidas do módulo responsável por elas.
+
+INTERAÇÃO
+Os pontos clicáveis das telas continuam ligados aos comandos originais.
+Na seleção de turma, são mantidas as 5 opções e o botão Voltar.
+Em tela vertical, há botões alternativos para permitir acesso a todas as opções sem rolagem horizontal.
+Os vídeos estão sem áudio, com reprodução automática e repetição; os players não exibem controles.
+Ao trocar de tela, os players do menu são pausados/liberados para reduzir consumo.
+
+VERIFICAÇÕES EXECUTADAS
+- Integridade e decodificação completa dos três vídeos: sem erros.
+- Identidade SHA-256 dos vídeos copiados: conferida com os vídeos originais enviados.
+- 66 scripts JavaScript do index.html e 506 arquivos .js: sintaxe válida.
+- Testes isolados de navegação e layout com Chromium em 1600x900, 1366x768,
+  844x390 e 390x844: cliques em Jogar, Modo Aventura, primeira turma e Voltar;
+  sem exceções JavaScript nesse teste.
+- Sem bordas ou filtros CSS de desfoque sobre os novos vídeos; layout preenche o viewport.
+
+IMPORTANTE SOBRE TESTE COMPLETO
+O ambiente onde os arquivos foram montados BLOQUEOU a navegação do Chromium para
+páginas locais (ERR_BLOCKED_BY_ADMINISTRATOR). Assim, NÃO foi possível executar
+nem jogar o jogo completo e NÃO há garantia de ausência total de bugs em todas
+as missões e cenários. A validação de jogabilidade integral em um PC real ainda é necessária.
+O vídeo 4K pode exigir hardware compatível para reprodução fluida.
+
+COMO ABRIR
+Extraia o ZIP sem mudar a estrutura de pastas. Se abrir index.html diretamente
+não permitir que todos os recursos carreguem, execute nesta pasta:
+    python -m http.server 8000
+Abra http://localhost:8000 em um navegador moderno.
+Para publicar, envie o conteúdo da pasta Amazonia-em-Fluxo à hospedagem web.
+Evite apagar a pasta ui/4k ou retirar os vídeos dela.

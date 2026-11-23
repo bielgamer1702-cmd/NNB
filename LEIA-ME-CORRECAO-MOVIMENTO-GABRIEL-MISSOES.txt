@@ -1,0 +1,10 @@
+AMAZÔNIA EM FLUXO — CORREÇÃO DE MOVIMENTAÇÃO, GABRIEL E SELEÇÃO DE MISSÕES
+
+Base: Revisão Completa Sem Bordas de 22/11/2026.
+
+1. MOVIMENTO: o algoritmo aprovado na prévia experimental foi transferido para a função de animação esquelética. Caminhada, corrida e repouso usam interpolação cúbica de clipes 3D, com amortecimento das transições. Personagens e NPCs compartilham a mesma função (quando o modelo rigado suporta o clipe).
+2. GABRIEL: usa a malha Trousers do próprio modelo real, preto-neutro. Camiseta, cabelo, face, mochila e tênis preservados.
+3. MISSÕES: desativadas as duas rotinas concorrentes que sobrepunham fotos remotas às imagens desenhadas no vídeo dos cartões. Fotos originais do vídeo ficam inalteradas.
+4. NÃO ALTERADOS: missões, cenários, vídeos, controles, HUD, progresso e demais personagens.
+
+VALIDAÇÃO: verificação de sintaxe, presença dos modelos/clipes, integridade do ZIP e testes de navegação, quando disponíveis. O comportamento final em hardware dos alunos precisa de avaliação prática.

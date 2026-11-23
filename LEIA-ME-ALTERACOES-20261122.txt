@@ -1,0 +1,25 @@
+AMAZÔNIA EM FLUXO — AJUSTES DE INTERFACE 22/11/2026
+
+BASE
+- Este pacote conserva a estrutura do jogo enviado pelo usuário, seus cenários, seus modelos 3D e seus arquivos de mídia.
+- O ZIP anterior do usuário não foi alterado.
+
+INTERFACES APROVADAS
+- As seis imagens originais enviadas foram copiadas sem qualquer modificação para a pasta ui/, com prefixos ref-.
+- Os botões inferiores Clima, Física, Missão e Caderno abrem as artes originais em janelas menores, dentro do jogo. A tela solar é vinculada ao contato Gaby Campelo quando essa guia estiver ativa.
+- Os botões de voltar fecham as interfaces. O exportador CSV do Caderno chama o exportador original do jogo.
+- Abas nas imagens de referência, quando não há artes alternativas enviadas, não inventam novas telas.
+
+HUD / PERSONAGENS
+- Fundos dos quadros do HUD: opacidade aproximada de 60% (40% de transparência); textos e ícones seguem legíveis.
+- Indicadores dos orientadores e das missões usam o padrão compacto de placas verdes.
+- Desabilitada a substituição procedural por corpos em blocos para jogador, orientadores, andantes e sentados durante o modo jogo. Se um modelo 3D não puder carregar, seu desenho antigo não é restaurado automaticamente.
+
+VERIFICAÇÃO REALIZADA
+- Arquivos PNG comparados por SHA-256: as seis cópias são idênticas às imagens fornecidas.
+- Testada a entrada na fase Campus Guamá e a navegação das quatro interfaces, sem exceções JavaScript detectadas no navegador de teste.
+- Verificado o download CSV.
+- O navegador automatizado deste ambiente não disponibiliza uma implementação WebGL plenamente funcional. Por isso não é possível garantir ausência de problemas gráficos ou desempenho em todos os equipamentos; testar também em Chrome/Edge com aceleração gráfica ativada.
+
+EXECUÇÃO
+- O jogo é uma aplicação estática. Para navegação e recursos locais funcionarem corretamente, publique a pasta inteira em um servidor HTTPS (como um site estático), sem separar o index.html da pasta ui/, dos modelos e das outras mídias.

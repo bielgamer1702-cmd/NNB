@@ -1,0 +1,23 @@
+AMAZÔNIA EM FLUXO — REVISÃO DE ESTABILIDADE
+
+COMO ABRIR
+Extraia todo o ZIP em uma pasta nova. Abra index.html no Chrome ou Edge. Não copie apenas o HTML: a pasta assets3d contém os recursos de todos os modelos e a pasta ui contém as artes do jogo. É recomendável manter a aceleração gráfica ativada no navegador. O padrão gráfico foi reduzido; use Leve ou Equilibrado se o dispositivo apresentar lentidão. HD e Ultra HD continuam disponíveis para equipamentos capazes.
+
+REVISÃO
+- Interface de seleção com arte aprovada, retratos originais, 18 opções, carrossel e mochila Sim/Não.
+- Pausa menor e sem painel opaco; janelas de clima, física e missão compactas, usando os recortes decorativos aprovados. Valores climáticos e textos de missão permanecem dinâmicos. O modo de experimento manual usa controles nativos personalizados.
+- Revisão do marcador dos orientadores Flávia, Samuca e Gaby, inclusive a indicação de distância quando estão fora da tela. Posições mantidas no capítulo correspondente.
+- Entrada no Marco em x=13,4 e z=0 no teste, no centro da pista do lado direito do canal, com verificação de obstáculos e veículos.
+- Recursos de geometria, texturas e animações separados do HTML: 289 MB para 29 MB no documento principal (tamanho decimal), carregamento sob demanda. Pacote completo ainda inclui todas as malhas e artes.
+- Pré-carregamento do elenco do capítulo, orçamento menor de NPCs na renderização, limites de resolução, interrupção da renderização 3D de fundo no lobby, redução de rotinas redundantes, novo cache de versão. Quando o modelo nomeado não está pronto, o jogo sinaliza a identidade com retrato temporário. Em modo de compatibilidade sem suporte de WebGL requerido, os retratos identificam os personagens nomeados; NPCs genéricos simplificados podem continuar sendo usados. Não é um teste de fidelidade da malha 3D.
+
+VALIDAÇÃO NESTE AMBIENTE
+- 18 cartões e ciclo completo de seleção; 10 cenários inicializados, cada um com 3 missões; posições iniciais sem colisão no diagnóstico.
+- Abertura das janelas de clima, física, guia e pausa; controle de chuva 100 mm/h e maré 85%.
+- Posições fixas de Flávia na UFPA e Cidade Nova, Samuca na Almirante Barroso e Gaby no Mercado de São Brás.
+- Carregamento sob demanda de dados de modelo testado no navegador com recursos locais interceptados.
+- 37 modelos e 1.006 peças: índices de triângulos dentro dos limites, vértices finitos, referências de recursos presentes. 66 blocos de JavaScript embutidos compilados sem erros de sintaxe; scripts de interface revisados.
+- Capturas do carrossel, clima, física, missão e pausa inspecionadas.
+
+LIMITAÇÕES
+A navegação por arquivo local direto foi bloqueada pelo ambiente de testes; os testes usaram o navegador com os arquivos fornecidos por interceptação de recursos, sem GPU compatível com a malha moderna. Não foi possível avaliar todas as animações em WebGL, jogar integralmente as 30 missões e as duas investigações extras ou medir FPS e memória em notebooks escolares/Android físicos. Não há garantia de ausência de bugs. As artes usam adaptações funcionais para os dados dinâmicos e retratos originais.

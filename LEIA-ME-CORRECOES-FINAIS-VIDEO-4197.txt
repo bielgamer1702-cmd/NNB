@@ -1,0 +1,35 @@
+AMAZÔNIA EM FLUXO — REVISÃO DE 22/11/2026 — VÍDEO COMO VOCÊ QUER JOGAR
+
+VÍDEO
+- A tela "Como você quer jogar?" agora utiliza os quadros do arquivo enviado 1000394197.mp4.
+- Exportação H.264 + AAC 1280x720 a 30 FPS para maior compatibilidade e alternativa 2560x1440 a 30 FPS em dispositivos capazes.
+- O primeiro quadro da tela vem do MESMO vídeo (ui/menus/escolha-modo-primeiro-quadro.webp), sem carregar arte antiga enquanto o vídeo inicia.
+- A tela ocupa a viewport inteira sem molduras. Os alvos de clique da aventura, aula, voltar e lobby são ajustados ao vídeo.
+- Versão do cache offline do aplicativo atualizada, evitando reutilizar index antigo após uma atualização bem-sucedida.
+
+INTERAÇÃO
+- Os atributos title que disparavam o balão branco de tooltip do navegador são removidos em tempo de execução. Nomes acessíveis dos botões são mantidos por aria-label.
+- Nenhuma rotina de pausa automática de vídeo foi adicionada; vídeos de menu permanecem com autoplay, muted e loop.
+- A interface de História dos capítulos reutiliza a seleção das missões e abre apenas a cena narrativa dos professores.
+- O HUD conserva as alterações previamente solicitadas (sem botão de missão). Ajustes para mobile e Flávia sentada permanecem na versão.
+
+TESTES CONCLUÍDOS NESTE AMBIENTE
+- Vídeo 720p e 1440p: ffprobe verificou H.264, AAC, resolução, duração (~17,28 s), 30 fps e integridade de metadados.
+- Navegador com interface simulada: cliques nos 4 botões da tela de modos, tanto 1280x720 quanto 900x412, sem exceções JavaScript.
+- Primeira imagem correta, sem carregamento de imagem antiga na tela de modos, observado por screenshot automatizado.
+- Inicialização lógica das 10 fases: 10/10 carregaram com 3 objetivos e sem exceções JavaScript nesse percurso.
+- História dos capítulos: seleção e retorno da cena da Flávia testados com interface simulada.
+- Flávia: posição do contato permaneceu fixa no Campus Guamá durante passos simulados.
+
+LIMITAÇÕES / VALIDAÇÃO EXTERNA OBRIGATÓRIA
+- O ambiente de testes não dispõe de WebGL utilizável e bloqueia navegação local normal. A reprodução de vídeo foi verificada no arquivo e o comportamento visual do primeiro quadro no navegador, mas não foi possível verificar o vídeo tocando visualmente neste navegador automatizado.
+- O teste das 10 fases é de INICIALIZAÇÃO E LÓGICA; não equivale à conclusão manual das 30 missões nem comprova desempenho em Chromebooks reais.
+- Para lançamento institucional, realizar sessões em PC e Chromebook de referência, com GPU real, verificando animações 3D, colisões, áudio, NPCs e conclusão de todas as missões.
+
+ARQUIVOS PRINCIPAIS
+index.html (porta de entrada)
+ui/menus/escolha-modo.mp4
+ui/menus/enhanced/escolha-modo-1440p.mp4
+ui/menus/escolha-modo-primeiro-quadro.webp
+ui/revisao-final-modo-4197.css
+ui/revisao-final-modo-4197.js

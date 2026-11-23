@@ -1,0 +1,25 @@
+AMAZÔNIA EM FLUXO — REVISÃO DE QUALIDADE VISUAL E VÍDEOS
+Data: 22/11/2026
+
+O QUE FOI ALTERADO
+1. Campus Guamá: rotação do modelo 3D principal da Flávia alterada de PI para 0 radianos. A pose sentada (pose 2), a posição fixa do banco e a desativação da patrulha de Flávia continuam aplicadas. Não foram modificados rosto, textura ou roupa.
+2. Menus com vídeo: tela inicial, Como você quer jogar, Escolha sua turma, Escolha sua missão e História dos capítulos (mesmo vídeo das missões) mantêm a reprodução animada dos MP4. A imagem antiga de espera foi retirada da estrutura das telas; o vídeo é mostrado diretamente. Enquanto o primeiro quadro está carregando, aparece uma cor neutra escura, nunca a arte antiga.
+3. Vídeos 4K: incluídos arquivos em 3840×2160/30 FPS/H.264 para os quatro menus de vídeo. Também mantidas as opções 2560×1440/30 FPS/H.264 e 1280×720/30 FPS/H.264. Os 4K dos três vídeos recentes foram AMPLIADOS a partir de fontes originais em 720p; isso não acrescenta detalhes que não estavam na fonte.
+4. Compatibilidade: arquivos básicos das telas de turmas e missões recodificados de HEVC para H.264. Os originais de referência continuam preservados externamente ao pacote; o jogo utiliza as cópias H.264.
+5. Reprodução: somente vídeos de menus efetivamente visíveis ficam decodificando em loop; vídeos de telas ocultas têm sua decodificação suspensa e retomam quando reabertos. Isso evita desperdício de processamento com várias telas invisíveis.
+6. HUD, NPCs, posição inicial, história e cenário José Leal Martins: mantidas as correções da versão anterior e os modelos 3D aprovados. HUD conserva a transparência de fundo de 50% sobre a opacidade anterior (0,30), com botão Missão oculto.
+7. Removido o pré-carregamento de imagens antigas de menus embutidas no HTML, reduzindo processamento de imagens que não são exibidas.
+
+TESTES REALIZADOS
+- Arquivos 4K das quatro telas abertos e decodificados integralmente pelo FFmpeg sem erros.
+- 66 blocos JavaScript internos do index.html e 18 scripts JS externos da pasta ui: sem erros de sintaxe.
+- Teste de lógica no Chromium: 10 capítulos inicializados e 3 tarefas definidas em cada um; nenhum pageerror durante o percurso testado.
+- Fluxo de menus em Chromium: vídeo inicial, modo, turma e missão referenciam os arquivos de vídeo; os quadros antigos não estão no DOM das telas.
+- Em teste de reprodução real no Chromium, o vídeo de turmas avançou corretamente; alguns vídeos maiores apresentaram atraso para o primeiro quadro no ambiente de teste.
+- Os testes automatizados não dispuseram de WebGL funcional; logo NÃO foi possível validar visualmente a pose da Flávia, colisões, 30 missões completas ou FPS no hardware real de uso.
+
+IMPORTANTE
+Uma resolução de arquivo 4K obtida por ampliação não equivale a uma captura originalmente em 4K. A fluidez dependerá da placa gráfica, do navegador e do processador. Esta revisão é uma versão de avaliação com correções de código e arquivos, não um laudo de homologação institucional isento de bugs.
+
+ABERTURA
+Abra index.html no Chrome ou Edge com aceleração gráfica ativada. Se o navegador bloquear arquivos locais/recursos 3D, execute o projeto em um servidor HTTP local (por exemplo, Live Server do VS Code) ou hospede-o em servidor web estático com suporte a arquivos MP4.

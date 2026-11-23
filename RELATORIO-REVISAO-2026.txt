@@ -1,0 +1,21 @@
+AMAZÔNIA EM FLUXO — REVISÃO DE CENÁRIOS E INTERFACES
+20/11/2026
+
+Base: Artes Aprovadas. Preservadas as 35 definições de modelo, os 16 cartões, os dez cenários e as 30 missões.
+- História dos capítulos: arte horizontal 1648 x 928 cobrindo o viewport no PC, áreas de seleção e estrelas ligadas ao estado. A arte ainda contém realces decorativos estáticos.
+- Pausa: PNG com transparência real, sem fundo opaco, opções originais clicáveis.
+- Clima automático, experimento, física e guia: janelas compactas com tipografia HTML nítida, controles nativos, medidas dinâmicas e fotos do cenário. Adaptação visual da arte, não reprodução pixel a pixel.
+- Marco: oito chamadas de desenho de faixas brancas eliminadas por filtro geométrico localizado, além da correção da camada principal de pintura viária; drenagem, meio-fio e materiais.
+- UFPA e Cidade Nova: Flávia com coordenadas de missão fixas, banco, pose sentada via esqueleto e modelo de reserva corrigido; exclusão da remoção pelo cache escolhido. A interação original E foi preservada no código.
+- Cidade Nova W8: 15 crianças representadas por modelos existentes em escala menor, com deslocamento, corrida, saltos lúdicos e bola; 7 adultos na lista de população regular. Em chuva forte as crianças interrompem a atividade e regressam aos pontos de origem; não é uma simulação completa de abrigo.
+- Ver-o-Peso: início seco; após primeiro contato de missão, temporal acelerado. Intensidade máxima 145 mm/h; fluxo didático mais rápido. Demais missões preservadas. Não representa previsão real de alagamento.
+- Professor Alemão: ajuste localizado do caimento das peças de uniforme, mantendo rosto, mãos, esqueleto e retrato.
+- Materiais dos cenários: iluminação, variação de materiais e detalhes de pavimento; melhorias localizadas de geometria no Marco e W8. O motor continua de baixo custo gráfico; não equivale a uma reconstrução fotorealista.
+
+VALIDAÇÕES EFETIVAS
+- Navegador Chromium em modo de diagnóstico com recursos 3D reduzidos: inicialização dos 10 cenários, 3 tarefas em cada; banco e posição de Flávia registrados nos cenários 2 e 3; distribuição de crianças e adultos; pausa, qualidade Leve, continuar, seleção de capítulo; clima automático e manual (100 mm/h), física e guia abertos; nenhum pageerror na segunda rodada.
+- Ver-o-Peso: chuva e lâmina zero no início; teste isolado de 30 s após ativação da missão: intensidade 145 mm/h, lâmina 0,176476 m (17,65 cm).
+- Teste numérico de locomoção: 16.800 quadros, 35 modelos. Desvio máximo de comprimento das pernas 0,000459 unidade de modelo. Pose sentada: 120 quadros; desvio máximo 0,000117 unidade; separação máxima entre pivôs 4,29e-8 unidade. Não substitui validação visual com texturas e malhas reais.
+- Sintaxe JS e referências de cache verificadas. ZIP verificado após compactação.
+
+LIMITAÇÕES: não houve partida integral das 30 missões nem teste em aparelho Android físico; não foi possível garantir ausência de deformações visuais ou desaparecimento em todas as condições. A validação de interface utilizou diagnóstico com WebGL desabilitado, não é benchmark de FPS. As artes e o código têm pesos elevados; a otimização priorizou reuso de geometria. Não se promete zero bugs. Este é um jogo educacional; experimentar alagamentos apenas em ambiente virtual.

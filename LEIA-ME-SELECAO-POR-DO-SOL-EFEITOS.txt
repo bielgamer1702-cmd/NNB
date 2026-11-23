@@ -1,0 +1,31 @@
+AMAZÔNIA EM FLUXO — 21/11/2026
+Telas e interações atualizadas sobre a última versão com 3 vídeos.
+
+MUDANÇAS
+- Seleção de personagens usa a arte aprovada "Escolha seu Personagem" ao pôr do sol.
+- Os 18 personagens mantêm os retratos existentes e podem ser escolhidos no mesmo cenário.
+- Tela apresenta cinco cartões (selecionado no centro), setas, Voltar, Lobby,
+  escolha de mochila e Continuar com áreas clicáveis sobre a arte.
+- Efeitos de mouse/foco/clique aplicados às interfaces: contorno luminoso,
+  identificação contextual de botões transparentes e pulso breve ao clicar.
+- Sem modificar as três animações de vídeo incluídas no pacote-base.
+- index.html preservado completo (sem nova minificação).
+
+VERIFICAÇÕES
+- Playwright/Chromium: Jogar -> Modo Aventura -> seleção de turma -> personagens.
+- 18 opções percorridas, troca por setas, opção de mochila, seleção e retorno.
+- Sem erros de JavaScript durante esses testes de interface.
+- Referências locais carregadas sem arquivos ausentes nesse percurso.
+- Não foi testado o jogo 3D completo nem todas as 30 missões em GPU real.
+
+IMPORTANTE
+- Os modelos 3D e a movimentação existente foram preservados nesta revisão;
+  as artes 2D não substituem automaticamente as malhas tridimensionais.
+- Não há garantia de ausência total de falhas gráficas em todos os dispositivos.
+
+ARQUIVOS DA ALTERAÇÃO
+index.html
+ui/personagem-por-do-sol-aprovado.png
+ui/sunset-roster-interactions.css
+ui/sunset-roster-interactions.js
+este LEIA-ME

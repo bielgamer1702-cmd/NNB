@@ -1,0 +1,33 @@
+AMAZÔNIA EM FLUXO — REVISÃO DE VÍDEOS, CLIQUES E PERSONAGENS
+Data: 21/11/2026
+
+CORREÇÕES APLICADAS
+- Todos os 3 vídeos animados possuem opções de 720p, 1440p e 2160p (4K).
+- As opções de resolução são selecionadas conforme o tamanho de tela e o hardware estimado. O 720p original fica disponível em aparelhos menos potentes.
+- O material de origem tem 1280x720. O 1440p e o 4K são versões ampliadas com denoise discreto e processamento suave; não contêm novos detalhes 4K nativos.
+- Nas telas inicial, de modalidade e de turma, as áreas de clique foram refinadas com contornos discretos e transparentes, sem preencher a arte com retângulos coloridos.
+- As animações possuem quadro inicial de reserva para evitar uma superfície preta durante a troca de tela; a reprodução real depende do navegador.
+- Nos 18 personagens, os retratos existentes foram preservados. Os personagens foram separados em PNG com transparência e o fundo com rostos impressos foi substituído por uma versão limpa das áreas internas das cartas.
+- Clicar diretamente na fotografia de um personagem seleciona o personagem e inicia o primeiro capítulo disponível, passando pela apresentação da missão; as setas continuam permitindo percorrer as opções.
+- A função, janela e o botão navegável da HISTÓRIA DOS CAPÍTULOS foram removidos do jogo. A legenda impressa no vídeo original da tela inicial permanece no próprio MP4, sem função: a remoção visual sem artefatos requer um vídeo-fonte corrigido.
+- Melhoradas as geometrias e a velocidade das aves que voam durante a renderização dos cenários 3D, com quantidade menor em aparelhos simples e em chuva forte.
+- O index.html continua como arquivo integral, sem minificação adicional.
+
+TESTES EXECUTADOS NESTA REVISÃO
+- 537 scripts JavaScript não-modelo e scripts embutidos validados sem erro de sintaxe.
+- Os 9 MP4 (três telas x três opções de resolução) decodificados integralmente e conferidos em 30fps.
+- No Chromium, navegação Jogar -> Modo Aventura -> Turma -> Personagens e clique direto na foto abriu o Capítulo 1.
+- Os 18 personagens puderam ser percorridos com as setas.
+- Tela horizontal 844x390: modo de jogo, botões e seleção de turma acessíveis sem erros de JavaScript.
+- Abertura do cenário 3D Marco testada no navegador com HUD e controles, sem erro de JavaScript nesse percurso.
+
+LIMITAÇÕES IMPORTANTES
+- Os modelos humanos 3D detalhados não foram carregados pelo ambiente de teste, que usou renderização simplificada. A remodelagem de todos os personagens com aspecto Roblox NÃO foi concluída nesta revisão.
+- Não houve teste completo das trinta missões e de todas as combinações de aparelhos/GPUs.
+- A presença e aparência dos pássaros foram verificadas no código, mas não validadas visualmente com a GPU detalhada no navegador de testes.
+- Nem um vídeo 720p aumentado para 2160p equivale a uma gravação realmente produzida em 4K/8K.
+- Não é possível garantir ausência absoluta de falhas em todos os computadores e celulares.
+
+COMO ABRIR
+- Extraia a pasta Amazonia-em-Fluxo completa; mantenha os diretórios ui e assets3d junto do index.html.
+- Abra index.html em um navegador moderno; se recursos locais forem bloqueados, publique os arquivos em um servidor HTTP estático (ex.: hospedagem do próprio jogo).

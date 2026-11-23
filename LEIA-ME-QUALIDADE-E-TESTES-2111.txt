@@ -1,0 +1,47 @@
+AMAZÔNIA EM FLUXO — REVISÃO DE INTERFACE, VÍDEOS E HISTÓRIA — 21/11/2026
+
+BASE: Amazonia-em-Fluxo-Personagens-Por-do-Sol-Efeitos.zip
+
+ALTERAÇÕES EFETIVAMENTE REALIZADAS
+1. Três vídeos de menus originais 1280×720/30 FPS preservados para compatibilidade com aparelhos leves.
+2. Três versões aperfeiçoadas 2560×1440/30 FPS geradas para telas maiores (reescala Lanczos,
+   suavização leve de artefatos e definição com parâmetros conservadores). Reprodução adaptativa
+   em monitores maiores: 1440p em desktop compatível, 720p em mobile/aparelhos limitados.
+3. Área clicável de Jogar, Voltar, Lobby, Modo Aventura, Modo Aula e turmas com polígonos
+   aproximando a moldura original e resposta luminosa sem deslocamento dos elementos.
+4. Todos os 17 retratos existentes foram recortados como PNG alfa, respeitando rostos e poses;
+   a opção de criar avatar usa a própria arte. Aplicado vidro translúcido nas cartas para
+   suavizar a figura impressa no cenário de fundo, mantendo o mesmo pôr do sol.
+5. A aba História dos Capítulos usa a arte histórica de referência fornecida, dez cartões,
+   leitura dinâmica por capítulo, botão Explorar e Voltar e posições clicáveis próprias.
+   Fotos reais: links e créditos existentes em ui/fotos-locais.json. Essas imagens exigem internet;
+   quando indisponíveis, o local mostra 'Foto real indisponível offline' e não exibe imagem
+   ilustrativa artificial como se fosse uma fotografia. Conferir autorização de uso antes
+   da publicação, especialmente fotografias de órgãos públicos e empresas.
+6. index.html COMPLETO: não houve minificação adicional nem reescrita destrutiva do código-base;
+   apenas foram adicionados recursos complementares externos e mantido o HTML principal.
+
+LIMITAÇÕES IMPORTANTES / NÃO CONCLUÍDAS
+- Super-resolução não cria detalhes nativos de 8K em vídeos originalmente 720p.
+  O máximo integrado como opção é 1440p; não afirmar que a origem ou os rostos são 8K.
+- Remodelagem integral dos NPCs e malhas 3D NÃO realizada: a versão inicial contém recursos
+  3D detalhados que no Chromium de teste não foram carregados. Os modelos existentes foram
+  preservados para não causar falhas gráficas irreversíveis sem uma GPU real.
+- Não é tecnicamente possível garantir ausência absoluta de erros de renderização em todas
+  as GPUs ou navegadores. Não foram escondidos avisos críticos sem solucionar a causa.
+- O teste do jogo não equivale a completar todas as 30 missões; foram testados a navegação,
+  os menus, a escolha dos 18 personagens, a abertura da História e a entrada no Capítulo 1.
+
+VERIFICAÇÕES
+- Chromium/Playwright: telas 1280×720, 1600×900 e 844×390, menu/modes/tracks/characters.
+- Percorrer 18 personagens, recortes PNG carregados, zero pageerrors nos testes de menus.
+- Capítulo 1 carregou e apresentou cenário/HUD sem erros JS nos testes efetuados.
+- Reprodução Chromium de MP4 1440p confirmada: 2560 pixels de largura, readyState 4.
+- Script novo validado com node --check, três vídeos validados com ffprobe/ffmpeg.
+- Fotos externas não descarregadas/validada visualmente em execução offline devido à falta
+  de acesso à internet na máquina de teste.
+
+USO
+Extraia o ZIP para uma pasta. Inicie com servidor HTTP local (por exemplo python -m http.server
+8080, dentro da pasta com index.html), e acesse http://localhost:8080. Não execute o arquivo
+abrindo como file:// quando os recursos dependem de HTTP. Use computador com WebGL ativo.

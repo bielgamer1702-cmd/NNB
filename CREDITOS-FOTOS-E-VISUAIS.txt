@@ -1,0 +1,36 @@
+AMAZÔNIA EM FLUXO — FONTES DE IMAGENS E VÍDEOS (revisão de 20/11/2026)
+
+Telas de jogo:
+- "Escolha sua turma": arte original aprovada; rio e aves animados por camada Canvas independente.
+  A interface (cartões, retratos, texto e botões) não se move.
+- "Investigação Sonora": arte aprovada, com controles interativos e onda/medições dinâmicas.
+- Botões da partida: quatro artes translúcidas aprovadas para Clima, Física, Missão e Caderno.
+- Vídeo demonstrativo da tela das turmas: ui/escolha-turma-rio-e-aves-demo.mp4.
+  O navegador usa uma camada animada sobre a imagem original para manter os cliques funcionando.
+
+Fotografias reais consultadas e oferecidas em carregamento online, com retorno automático
+à arte do jogo quando a fonte estiver indisponível:
+1. Passagem José Leal Martins: Agência Pará,
+   https://agenciapara.com.br/noticia/68774/obra-de-macrodrenagem-do-canal-da-leal-martins-em-belem-chega-a-fase-final
+2. Campus Guamá/UFPA: Prefeitura da UFPA,
+   https://prefeitura.ufpa.br/index.php/component/content/article/14-assuntos/obras/147-espaco-de-ensino-mirante-do-rio
+3. Cidade Nova VIII: Ananews,
+   https://ananews.com.br/galeria/103/o-acender-das-luzes-de-natal-em-ananindeua-no-complexo-da-cidade-nova-viii
+4. Ver-o-Peso: Esse Mundo É Nosso,
+   https://www.essemundoenosso.com.br/mercado-ver-o-peso-belem/
+5. Praça da República: Agência Pará,
+   https://agenciapara.com.br/galeria/17852/praca-da-republica-drone
+6. Almirante Barroso: Agência Pará,
+   https://agenciapara.com.br/galeria/6377/cotidiano-urbano-almirante-barroso
+7. Shopping Metrópole: Shopping Metrópole,
+   https://shoppingananindeua.com.br/
+8. Mercado de São Brás: Diário do Pará,
+   https://diariodopara.com.br/belem/oportunidade-cadastre-seu-negocio-no-novo-mercado-de-sao-bras/
+9. Parque Estadual do Utinga: Agência Pará,
+   https://agenciapara.com.br/noticia/50853/parque-estadual-do-utinga-se-destaca-como-um-espaco-versatil-para-eventos-de-diversas-areas
+10. Mangueirão: Remo 100%,
+   https://www.remo100porcento.com/futebol-profissional/2025/remo-estreia-no-mangueirao-na-copa-verde-2025
+
+As fotografias de terceiros são carregadas a partir dos sites de origem, não incluídas
+fisicamente neste ZIP. Uso público do jogo pode exigir permissão/licenciamento;
+verifique os termos e créditos específicos antes de distribuir comercialmente.

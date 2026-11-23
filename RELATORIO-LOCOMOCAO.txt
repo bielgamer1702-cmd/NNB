@@ -1,0 +1,3 @@
+Locomoção: cadência por deslocamento, mistura caminhar/correr, ortonormalização, cinemática inversa e apoio dos pés. Geometria de pernas suavizada em 145 peças. Gabriel e Marcelino: malhas aprovadas, Gabriel integrado ao slot correto; alterações isoladas nas pernas. Flávia: busca de local alcançável e visual provisório durante carregamento. Professor Alemão: encaixe da camisa. 66 scripts validados. Teste numérico: {"frames":16800,"models":35,"maxLegLengthError":3.962612082908379e-8}
+
+Sem teste visual completo de WebGL; não certificado como livre de bugs.

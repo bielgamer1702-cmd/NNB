@@ -1,0 +1,18 @@
+AMAZÔNIA EM FLUXO — REVISÃO DA SEGUNDA TELA, HISTÓRIA E NAVEGAÇÃO
+
+1. Como você quer jogar?: vídeo correto 2560×1440 H.264 derivado do original 1280×720. Área de clique partilha a mesma coordenada 16:9 do vídeo, evitando distorção em diferentes proporções de tela. Botões Aventura, Aula, Voltar e Lobby alinhados. Quando necessário, poster usa o primeiro quadro exato do vídeo.
+2. Mudança de tela: próximo vídeo da seleção de turmas preparado antecipadamente; transferido sem criar um segundo decodificador quando possível. Sem mudança de fonte de vídeo enquanto já está tocando.
+3. ESC: solicita tela cheia no PC em janela. Dentro da tela cheia, ESC sai usando o comportamento nativo do navegador. F10 e botão de pausa permitem pausar o jogo.
+4. Abertura histórica: narrativa dos professores disponível antes de cada capítulo; removida a duplicação de chamada; também incluídos os 4 capítulos finais.
+5. Investigação extra: retirado retrato flutuante na janela, preservando o experimento e as perguntas.
+6. Luana Gemaque: restaurado retrato aprovado, sem desenho novo do rosto.
+7. Créditos: a conclusão do décimo capítulo aciona a tela de créditos aprovada.
+
+TESTES CONCLUÍDOS
+- Navegador Chromium sintético: carregamento do jogo sem erros JavaScript; ESC chamou o recurso de tela cheia; clique físico dos botões Voltar e Lobby; clique de Aula abriu a seleção de turma; estados de vídeo verificados. A mídia foi substituída por cópia menor somente no teste sintético para reduzir o consumo do navegador. A versão do pacote usa o vídeo de 1440p.
+- Abertura cinematográfica dos capítulos 1, 2, 6, 7, 8, 9 e 10 confirmada, incluindo nomes dos orientadores.
+- Início real da fase 1 confirmado, introdução histórica ativa e posição na rua.
+- Créditos exibidos após simular a conclusão dos 10 capítulos.
+- Sintaxe dos scripts externos validada; links relativos para JS conferidos; integridade do ZIP verificada.
+
+LIMITAÇÕES: não foi possível jogar todas as 30 missões em uma GPU física nem aferir FPS e latência em todos os aparelhos. Alta resolução de vídeo não aumenta a quantidade de detalhes do arquivo original de 720p. A aparência do rosto 3D da Luana ainda precisa de inspeção visual no jogo.

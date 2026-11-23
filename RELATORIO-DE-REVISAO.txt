@@ -1,0 +1,22 @@
+AMAZÔNIA EM FLUXO — revisão das interfaces, movimentos e orientação
+
+Base: Amazonia-em-Fluxo-Atualizado.zip. Os dez capítulos e o sistema educativo foram mantidos.
+
+ALTERAÇÕES
+- Menu funcional em duas filas de oito cartões, com retratos originais reutilizados e fundos verdes harmonizados; correção de conflito de CSS que comprimía o menu.
+- Flávia possui agora rig dedicado, cachos escuros e mechas douradas, camiseta laranja Colorado Sports, calça e sapatos marrons, brincos e mochila opcional. Foi adaptada a partir da malha feminina disponível; o arquivo independente da malha exata da prévia não foi localizado.
+- Tamires utiliza o modelo personalizado existente, cabelo vermelho, óculos claros, camisa escura, calça escura e sapatos brancos. A prévia enviada foi tomada como referência, não como arquivo 3D.
+- Orientações e perguntas usam uma única atribuição de orientadores. Na UFPA e Cidade Nova, Flávia recebe missão 2, os demais orientadores recebem 1 e 3. Corrigida prioridade entre guia e missão atual e proteção contra índice inválido.
+- Menor velocidade de deslocamento para melhorar a cadência (1,48 e 3,25 unidades do mundo/s para caminhada e corrida em terreno livre), transição com histerese, continuidade de fase, suavização da velocidade de reprodução e normalização das matrizes dos ossos do personagem jogável. Ajuste gradual da elevação dos pés. Os 20 conjuntos originais de clips foram preservados.
+
+TESTES
+- 66 scripts executáveis verificados com Node --check.
+- 35 registros de modelos avaliados: referências de texturas e animações, índices de vértices e ossos, dados finitos e comprimento dos clips. 20 conjuntos de clips originais comparados.
+- Cópia de diagnóstico em Chromium com recursos gráficos pesados reduzidos: 16 cartões, seleção de Flávia, responsividade básica, 10 capítulos inicializados, 30 perguntas do Ensino Fundamental abertas e respondidas corretamente, com resolução; orientação da Flávia nos dois mapas confirmada. Distância entre orientadores: 16 unidades em cada um dos dois cenários. Nenhum erro JavaScript capturado nesses testes.
+- Banco de perguntas: 30 por nível de escolaridade, 150 ao todo. Somente as 30 de Ensino Fundamental foram executadas no ensaio de interface descrito acima.
+
+LIMITAÇÕES
+O carregamento do jogo integral em Chromium foi bloqueado pelo ambiente. Não foi possível testar visualmente a movimentação com todos os recursos 3D, percorrer todos os mapas completos, verificar desempenho em celulares físicos ou garantir ausência de bugs. O movimento e a semelhança dos modelos precisam de validação visual no navegador do jogador com WebGL e aceleração gráfica ativados.
+
+PARA JOGAR
+Extraia o ZIP inteiro. Abra index.html em Chrome ou Edge com aceleração gráfica. Não abra diretamente dentro do ZIP. Se estiver usando uma versão hospedada anterior, recarregue sem cache (Ctrl+F5) após atualizar todos os arquivos da hospedagem, não somente index.html.

@@ -1,0 +1,26 @@
+AMAZÔNIA EM FLUXO — TELAS ATUALIZADAS (21/11/2026)
+
+Substituições autorizadas:
+- Tela inicial: ui/menus/tela-inicial.mp4 (vídeo recebido: 1000392731.mp4)
+- Escolha do modo: ui/menus/escolha-modo.mp4 (1000392728.mp4)
+- Escolha da turma: ui/menus/escolha-turma.mp4 (1000392742.mp4)
+
+Os três vídeos enviados têm 1280 × 720 pixels e 30 FPS. Foram convertidos de
+HEVC (H.265) para H.264 por compatibilidade com navegadores, preservando a
+resolução e os 30 FPS. Não foi usado efeito de nitidez, estabilização nem upscale.
+
+As interfaces são exibidas em tela cheia sem contêiner com margens laterais.
+O primeiro quadro real de cada vídeo está embutido no index.html e aparece já
+no clique, antes de o vídeo terminar de carregar. Os botões são interativos.
+Em telas não proporcionais a 16:9, o vídeo adapta-se ao espaço disponível; no
+celular vertical, use os botões de navegação alternativos e prefira landscape.
+
+O index.html permanece como arquivo HTML completo (sem divisão ou minificação
+adicional da base do jogo). A renderização 3D permanece no código de origem.
+
+Na prática não é possível garantir ausência absoluta de falhas de GPU em todos
+os computadores, navegadores e celulares. Os arquivos e a sintaxe podem ser
+verificados, mas o jogo 3D exige testes no dispositivo que o executa.
+
+Para jogar: extraia TODO o conteúdo ZIP e abra o index.html em navegador
+moderno; para instalação PWA e cache, use hospedagem HTTPS.
